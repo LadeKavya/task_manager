@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TaskFlow Login</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+.login-box{
+    max-width:500px;
+    margin:80px auto;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card login-box">
+
+        <h1 class="logo">⚡ TaskFlow</h1>
+
+        <h2>Login</h2>
+
+        <input
+            type="email"
+            placeholder="Email"
+            id="email"
+        >
+
+        <input
+            type="password"
+            placeholder="Password"
+            id="password"
+        >
+
+        <button onclick="login()">
+            Login
+        </button>
+
+        <br><br>
+
+        <p style="text-align:center;">
+            Demo Login Page
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+
+function login(){
+
+    const email =
+    document.getElementById("email").value;
+
+    const password =
+    document.getElementById("password").value;
+
+    if(email === "" || password === ""){
+        alert("Please fill all fields");
+        return;
+    }
+
+    window.location.href = "index.html";
+}
+
+</script>
+
+</body>
+</html>
